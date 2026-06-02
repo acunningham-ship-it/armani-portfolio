@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Armani Cunningham — Portfolio</title>
-<meta name="description" content="Armani Cunningham — graphic design student. Animation, Photography, Graphic Design. Junior Mastery, Digital Arts, ACE, Image Editing." />
+<meta name="description" content="Armani Cunningham — graphic design student & animator. Junior Mastery, Animation, Digital Arts, ACE, Image Editing." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
@@ -12,13 +12,13 @@
 <body>
 <header class="nav">
   <div class="nav-inner">
-    <a href="#/home" class="brand" data-nav>AC<span class="dot">.</span></a>
+    <a href="#/home" class="brand">AC<span class="dot">.</span></a>
     <button id="menu-btn" class="menu-btn" aria-label="Menu">☰</button>
-    <nav id="nav-links" class="nav-links"><!-- built by app.js --></nav>
+    <nav id="nav-links" class="nav-links"></nav>
   </div>
 </header>
 
-<main id="content"><!-- rendered by app.js --></main>
+<main id="content"></main>
 
 <footer class="footer">
   <div class="container footer-inner">
@@ -27,7 +27,6 @@
   </div>
 </footer>
 
-<!-- Lightbox -->
 <div id="lightbox" class="lightbox" hidden>
   <button class="lb-close" aria-label="Close">✕</button>
   <button class="lb-prev" aria-label="Previous">‹</button>
@@ -36,6 +35,7 @@
   <div id="lb-count" class="lb-count mono"></div>
 </div>
 
+<script src="data.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
