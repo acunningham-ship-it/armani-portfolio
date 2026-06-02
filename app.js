@@ -63,7 +63,7 @@ function render(slug) {
   const c = $("#content"); window.scrollTo(0, 0);
 
   if (page.type === "home") {
-    const hero = FILES.includes("Armani Cunningham.jpg") ? "Armani Cunningham.jpg" : (FILES.find((f) => /welcome|theheader|heyjohn/i.test(f)) || FILES[0]);
+    const hero = FILES.includes("IMG_3622.JPG") ? "IMG_3622.JPG" : (FILES.find((f) => /^IMG_2025/.test(f)) || FILES[0]);
     c.innerHTML = `
       <section class="hero container">
         <div class="hero-copy">
