@@ -179,7 +179,7 @@ window.SITE = {
     {
      "heading": "Adobe Express Animation",
      "body": "For my animation video in Adobe Express I used T's as the border with a bouncing effect — it represented my brand idea well with the purple, white and black.",
-     "video": "11 - ArmaniCunninghamExpressAnimation.mp4",
+     "video": "express-animation.mp4",
      "images": []
     },
     {
@@ -194,7 +194,7 @@ window.SITE = {
      "heading": "Famous Quote Typography",
      "body": "I chose the quote \"So many books, so little time.\" I made \"many\" bigger and \"little\" smaller to show their importance, and added B's on the side like book binding to fill the empty space. The simple, empty look makes it better.",
      "images": [
-      "Untitled.png",
+      "famous-quote.png",
       "g-digital-arts-2-07.png"
      ]
     },
@@ -202,7 +202,7 @@ window.SITE = {
      "heading": "Typography Album Poster",
      "body": "A CD cover for the band Living Tombstone and the FNAF songs they make. Green and orange for their logo, plus the animatronics' colors for the FNAF text. I layered T's around the corner for structure.",
      "images": [
-      "Armani Cunningham Typography 13.25.34.png",
+      "album-poster.png",
       "g-digital-arts-2-08.png"
      ]
     },
@@ -232,7 +232,7 @@ window.SITE = {
    "title": "My Portfolio",
    "body": "Portfolio coming soon — see my work on the <a href='#/digital-arts-1'>Digital Arts</a> and <a href='#/ace'>ACE</a> pages.",
    "images": [
-    "Screenshot 2025-10-07 at 1.12.43 PM.png"
+    "portfolio-construction.png"
    ]
   },
   "ace": {
@@ -247,28 +247,28 @@ window.SITE = {
      "heading": "Adobe Photoshop Certification",
      "body": "I am officially certified in Adobe Photoshop! I'll retake it every 3 years, but I'm very proud — I was stressed clicking submit but passed with a high score. (Verify via the steps on the bottom-left of the certificate.)",
      "images": [
-      "Screenshot 2025-12-12 at 12.46.49 PM.png"
+      "cert-photoshop.png"
      ]
     },
     {
      "heading": "Adobe Animate Certification",
      "body": "I am officially certified in Adobe Animate! I'll retake it every 3 years. It was challenging and tough to remember some tool locations, but I pulled through. (Verify via the steps on the bottom-left of the certificate.)",
      "images": [
-      "Screenshot 2025-12-12 at 12.46.40 PM.png"
+      "cert-animate.png"
      ]
     },
     {
      "heading": "Digital Media 2 Certification",
      "body": "Certified in Digital Media 2 (passed 11/14/25). Standards: Planning/Design/Development · Digital Audio · 2D Animation · Digital Video · Team Activities · Copyright Laws, Ethics & Issues.",
      "images": [
-      "Screenshot 2025-12-12 at 12.36.14 PM.png"
+      "cert-dm2.png"
      ]
     },
     {
      "heading": "Digital Media 1 Certification",
      "body": "Certified in Digital Media 1 (passed 12/12/25). Standards: Design Process · Color Theory · Typography · Vector Graphics · Raster Images · Project Management · Careers & Employability.",
      "images": [
-      "Screenshot 2025-12-12 at 12.36.25 PM.png"
+      "cert-dm1.png"
      ]
     },
     {
@@ -308,7 +308,7 @@ window.SITE = {
     {
      "heading": "My Art (State Fair 2025)",
      "images": [
-      "Screenshot 2025-08-29 at 12.47.18 PM.png"
+      "my-art-statefair.png"
      ]
     },
     {
@@ -341,8 +341,7 @@ window.SITE = {
      "heading": "Image Editing 1",
      "body": "This is all my work from my 24-25 image editing class!",
      "images": [
-      "g-image-editing-01.jpg",
-      "g-image-editing-02.png"
+      "g-image-editing-01.jpg"
      ]
     }
    ]
