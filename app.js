@@ -66,7 +66,8 @@ function render(slug) {
   const c = $("#content"); window.scrollTo(0, 0);
 
   if (page.type === "home") {
-    const hero = FILES.includes("IMG_3622.JPG") ? "IMG_3622.JPG" : (FILES.find((f) => /^IMG_2025/.test(f)) || FILES[0]);
+    const hero = (page.hero && FILES.includes(page.hero)) ? page.hero : (FILES.find((f) => /^IMG_3622/i.test(f)) || FILES[0]);
+    const featured = imgs(page.featured || []);
     c.innerHTML = `
       <section class="hero container">
         <div class="hero-copy">
@@ -82,6 +83,7 @@ function render(slug) {
         <div class="section-head"><h2>Explore the <span class="red">work</span></h2></div>
         <div class="tiles">${["junior-mastery","animation","digital-arts-1","digital-arts-2","ace","image-editing"]
           .map((s) => `<a class="tile" href="#/${s}"><span class="tile-title">${esc(P[s].title)}</span></a>`).join("")}</div>
+        ${featured.length ? `<div class="section-head" style="margin-top:48px"><h2>Featured <span class="purple">Work</span></h2></div>${gallery(featured)}` : ""}
       </section>`;
     return;
   }
@@ -110,6 +112,7 @@ function route() { render(location.hash.replace(/^#\//, "") || "home"); }
 async function init() {
   $("#nav-links").innerHTML = navHTML();
   try { FILES = await (await fetch("media-list.json")).json(); } catch (e) { FILES = []; }
+  try { window.SITE.captions = Object.assign({}, await (await fetch("captions.json")).json(), window.SITE.captions || {}); } catch (e) { window.SITE.captions = window.SITE.captions || {}; }
   // lightbox wiring
   $(".lb-close").onclick = closeLB;
   $(".lb-prev").onclick = () => { lb.i--; showLB(); };
