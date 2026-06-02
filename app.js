@@ -29,8 +29,11 @@ function closeLB() { $("#lightbox").hidden = true; document.body.style.overflow 
 function showLB() {
   if (!lb.list.length) return;
   lb.i = (lb.i + lb.list.length) % lb.list.length;
-  $("#lb-img").src = mediaURL(lb.list[lb.i]);
+  const f = lb.list[lb.i];
+  $("#lb-img").src = mediaURL(f);
   $("#lb-count").textContent = `${lb.i + 1} / ${lb.list.length}`;
+  const cap = (window.SITE.captions || {})[f] || "";
+  const el = $("#lb-caption"); el.textContent = cap; el.style.display = cap ? "block" : "none";
 }
 
 function gallery(list) {

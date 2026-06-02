@@ -84,7 +84,8 @@ img{max-width:100%;display:block}
 .lb-close,.lb-prev,.lb-next{position:absolute;background:rgba(20,20,20,.7);border:1px solid var(--border2);color:#fff;cursor:pointer;border-radius:10px;font-size:24px;line-height:1;padding:10px 16px}
 .lb-close:hover,.lb-prev:hover,.lb-next:hover{border-color:var(--red)}
 .lb-close{top:20px;right:20px;font-size:18px}.lb-prev{left:18px;top:50%;transform:translateY(-50%)}.lb-next{right:18px;top:50%;transform:translateY(-50%)}
-.lb-count{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);color:var(--dim);font-size:13px}
+.lb-caption{position:absolute;bottom:52px;left:50%;transform:translateX(-50%);max-width:min(80vw,640px);text-align:center;color:var(--text);background:rgba(18,18,18,.82);border:1px solid var(--border2);border-radius:8px;padding:8px 14px;font-size:14px;line-height:1.45}
+.lb-count{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);color:var(--dim);font-size:13px}
 
 .footer{border-top:1px solid var(--border);padding:26px 0;margin-top:30px}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:13px;color:var(--muted);flex-wrap:wrap}

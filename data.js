@@ -154,4 +154,20 @@ window.SITE = {
       { term: "Calibration", def: "Aligning the webcam and microphone for facial-expression and voice tracking." },
     ]},
   },
+
+  // per-image captions (shown in the lightbox). Keyed by media filename.
+  captions: {
+    "AAST Water.jpg": "AAST Water — This is the final product. I updated the two placeholders, and this was the final look. Overall I'm really happy with how it came out. I learned a few skills such as cropping shapes and formatting text into shapes.",
+    "Armanicunningham_ReadacrossSC.jpg": "Read Across SC Final — I made this in Photoshop. Due to my inability to actually draw, I used gradients and images in text.",
+    "IMG_20251017_064315.jpg": "7AM — An image me and my friends took during our bus ride to the state fair. This was important because I got to learn a lot about them throughout the day.",
+    "Screenshot 2025-08-29 at 12.47.18 PM.png": "My Art (State Fair 2025).",
+    "Screenshot 2025-10-31 at 12.49.36 PM.png": "Final Picture — This was the AI art I chose to submit, and it got into the competition!",
+    "Untitled.png": "Famous Quote Typography — \"So many books, so little time.\"",
+    "Armani Cunningham Typography 13.25.34.png": "Typography Album Poster — Living Tombstone / FNAF CD cover.",
+    "Screenshot 2025-12-12 at 12.46.49 PM.png": "Adobe Photoshop Certification.",
+    "Screenshot 2025-12-12 at 12.46.40 PM.png": "Adobe Animate Certification.",
+    "Screenshot 2025-12-12 at 12.36.14 PM.png": "Digital Media 2 Certification.",
+    "Screenshot 2025-12-12 at 12.36.25 PM.png": "Digital Media 1 Certification.",
+    "armanicunninghamphotoshop1.jpg": "Final Project 1 — the final glitch effect project. I used various hue/saturation effects and a layer mask.",
+  },
 };
