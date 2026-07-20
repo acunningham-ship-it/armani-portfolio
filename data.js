@@ -298,7 +298,7 @@ window.SITE = {
        ],
        "link": {
         "url": "https://arsenicadministration.org/",
-        "label": "Visit Arsenic Administration"
+        "label": "Play the game"
        }
       },
       {
