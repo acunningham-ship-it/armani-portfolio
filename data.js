@@ -288,7 +288,7 @@ window.SITE = {
      "sections": [
       {
        "heading": "Tech Fair — 1st Place",
-       "body": "My team — me, Angel Guzman, and Gio Zapata — took 1st place at the Tech Fair with our game Employee of the Month, a game about working-class struggle and resource management where you play a literal human battery powering a factory under pressure.",
+       "body": "My team — me, Angel, and Gio — took 1st place at the Tech Fair with our game Employee of the Month, a game about working-class struggle and resource management where you play a literal human battery powering a factory under pressure.",
        "note": "1 / 4",
        "images": [
         "g-ace-techfair-01.jpg",
