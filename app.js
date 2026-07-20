@@ -62,6 +62,7 @@ function sectionHTML(s) {
   h += `<h2>${esc(s.heading || "")}</h2>`;
   if (s.sub && s.heading) h += `<p class="sub">${esc(s.sub)}</p>`;
   if (s.body) h += `<p class="body">${esc(s.body)}</p>`;
+  if (s.link) h += `<a class="btn btn-primary sec-btn" href="${esc(s.link.url)}" target="_blank" rel="noopener">${esc(s.link.label || "Visit")} ↗</a>`;
   if (s.video && FILES.includes(s.video)) h += `<video class="vid" controls src="${mediaURL(s.video)}"></video>`;
   if (s.item) h += `<p class="item-label mono">${esc(s.item)}</p>`;
   if (s.caption) h += `<p class="caption">${esc(s.caption)}</p>`;

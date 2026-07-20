@@ -118,3 +118,6 @@ img{max-width:100%;display:block}
 .ss-prev:hover,.ss-next:hover{border-color:var(--red)}
 .ss-prev{left:14px}.ss-next{right:14px}
 .ss-count{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);color:var(--dim);font-size:13px;background:rgba(18,18,18,.78);padding:3px 11px;border-radius:6px}
+
+/* SECTION LINK BUTTON */
+.block .sec-btn{display:inline-block;margin:14px 0 2px}

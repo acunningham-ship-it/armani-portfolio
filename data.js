@@ -295,7 +295,11 @@ window.SITE = {
         "g-ace-techfair-02.jpg",
         "g-ace-techfair-03.jpg",
         "g-ace-techfair-04.jpg"
-       ]
+       ],
+       "link": {
+        "url": "https://arsenicadministration.org/",
+        "label": "Visit Arsenic Administration"
+       }
       },
       {
        "heading": "Read Across SC Competition",
