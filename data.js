@@ -51,28 +51,71 @@ window.SITE = {
   "home": {
    "type": "home",
    "hero": "IMG_3622.JPG",
-   "featured": [
-    "g-home-01.jpg",
-    "g-home-02.jpg",
-    "g-home-03.jpg",
-    "g-home-04.jpg",
-    "g-home-05.jpg",
-    "g-home-06.jpg"
-   ]
+   "featured": []
   },
   "junior-mastery": {
    "type": "sections",
-   "title": "Junior Mastery",
+   "title": "Junior Mastery — Plane Dread",
+   "slideshow": [
+    "g-jm-slide-01.png",
+    "g-jm-slide-02.png",
+    "g-jm-slide-03.png",
+    "g-jm-slide-04.png",
+    "g-jm-slide-05.png",
+    "g-jm-slide-06.png",
+    "g-jm-slide-07.png",
+    "g-jm-slide-08.png",
+    "g-jm-slide-09.png",
+    "g-jm-slide-10.png",
+    "g-jm-slide-11.png",
+    "g-jm-slide-12.png"
+   ],
    "sections": [
     {
-     "heading": "Junior Mastery — Week 1",
-     "body": "Project one was building the plane layout. This is the final week 1 image, the collision errors I hit (spamming space to look back and forth + moving left/right let me clip through the wall), and an inside view of the plane.",
+     "heading": "Plane Dread",
+     "body": "Plane Dread is a horror game I built to fix a problem I kept running into — that so many horror games are pedestrian and copies of each other. The deck above walks through the whole build; the breakdown below goes week by week. By the numbers: 25 enemies, 100,000+ possible rounds, and a 25% win rate."
+    },
+    {
+     "heading": "Research",
+     "body": "This project wasn't really backed by research — it was more my own experiences and YouTube videos I'd picked up over the years. I find research limiting for me, so while I learned a lot here, I also learned I need to account for what's happening as I build and push myself to be more creative."
+    },
+    {
+     "heading": "The Problem",
+     "body": "The problem I set out to tackle was that so many games are copies of each other, especially in horror — like Poppy Playtime getting called the mascot-horror copy of Freddy Fazbear, or the thousands of Granny and Baldi clones that flooded the app store."
+    },
+    {
+     "heading": "Week 1 — Building the Plane",
+     "body": "Week 1 was developing the plane and nav-meshing the player and map. My first real problem was the nav mesh trying to spawn on the roof of the plane when I baked the floor. Box colliders went on every single chair so the player couldn't clip through them.",
      "images": [
       "g-junior-mastery-01.png",
       "g-junior-mastery-02.png",
       "g-junior-mastery-03.png",
       "g-junior-mastery-04.png"
      ]
+    },
+    {
+     "heading": "Week 2 — The Puzzles",
+     "body": "Week 2 was dedicated to the puzzles. The Breaker puzzle was inspired by the same puzzle from Doors, but I added the Puzzler enemy to make it more nerve-wracking than it should be, and rebuilt the breaker from scratch using Claude and MCP. The Cockpit is a puzzle where you turn dials to realign the plane's system settings."
+    },
+    {
+     "heading": "Week 3 — The Enemies (the hardest part)",
+     "body": "Week 3 was making the enemies, and it was really frustrating — a ton of bugs. Henry would sometimes stand the passengers up or contort their legs backwards, which gave away which passenger had become Henry. Puzzler went through several remodels (the first one looked like some Wizard of Oz thing), and Peeper had a bug where he'd spawn in invisibly and kill the player."
+    },
+    {
+     "heading": "The Enemies",
+     "body": "These are the enemies you can actually see during a round — the rest are abstract. Puzzler attacks during puzzles. Peeper makes you watch the bathroom door. Bloodhound stalks you throughout the plane. And Henry — you'd never notice he's there until it's too late."
+    },
+    {
+     "heading": "AI Models I Used",
+     "body": "Claude did a good 85% of the coding. Owl-Alpha, a free beta model in testing, did the rest. Deepseek helped me visualize the plan, and Tripo3D helped me model the enemy models I couldn't build myself in time."
+    },
+    {
+     "heading": "Debugging",
+     "body": "There were several bugs throughout, and the game still isn't fully finished. Decompression — an enemy that kills you if you stay near the front of the plane — would randomly kill you with no cue. And the oxygen system didn't work at first, so you'd eventually die near a mask during a pressure-drop round."
+    },
+    {
+     "heading": "The End… for now",
+     "body": "This game will be fully bug-fixed and updated in the future. Thanks for witnessing this junior mastery."
     }
    ]
   },
@@ -166,6 +209,7 @@ window.SITE = {
   "digital-arts-2": {
    "type": "sections",
    "title": "Digital Arts and Design 2",
+   "banner": "<div class=\"banner\"><p>A lot happened this semester — new Adobe certifications, competitions, and a 1st-place Tech Fair win.</p><a class=\"btn btn-primary\" href=\"#/ace\">See it on the ACE page →</a></div>",
    "sections": [
     {
      "heading": "Digital Branding Assets",
@@ -236,99 +280,179 @@ window.SITE = {
    ]
   },
   "ace": {
-   "type": "sections",
+   "type": "tabs",
    "title": "ACE",
-   "sections": [
+   "tabs": [
     {
-     "heading": "Adobe Premiere Certification",
-     "images": []
-    },
-    {
-     "heading": "Adobe Photoshop Certification",
-     "body": "I am officially certified in Adobe Photoshop! I'll retake it every 3 years, but I'm very proud — I was stressed clicking submit but passed with a high score. (Verify via the steps on the bottom-left of the certificate.)",
-     "images": [
-      "cert-photoshop.png"
+     "label": "Certifications",
+     "sections": [
+      {
+       "heading": "Adobe Photoshop Certification",
+       "body": "I am officially certified in Adobe Photoshop! I'll retake it every 3 years, but I'm very proud — I was stressed clicking submit but passed with a high score. (Verify via the steps on the bottom-left of the certificate.)",
+       "images": [
+        "cert-photoshop.png"
+       ]
+      },
+      {
+       "heading": "Adobe Animate Certification",
+       "body": "I am officially certified in Adobe Animate! I'll retake it every 3 years. It was challenging and tough to remember some tool locations, but I pulled through. (Verify via the steps on the bottom-left of the certificate.)",
+       "images": [
+        "cert-animate.png"
+       ]
+      },
+      {
+       "heading": "Adobe Premiere Pro — Digital Video",
+       "body": "Adobe Certified Professional in Digital Video Using Adobe Premiere Pro (earned December 19, 2025). Verify it with the code on the bottom-left of the certificate.",
+       "images": [
+        "cert-premiere.png"
+       ]
+      },
+      {
+       "heading": "Adobe InDesign — Print & Digital Media Publication",
+       "body": "Adobe Certified Professional in Print & Digital Media Publication Using Adobe InDesign (earned January 9, 2026). Verify it with the code on the certificate.",
+       "images": [
+        "cert-indesign.png"
+       ]
+      },
+      {
+       "heading": "Adobe Express — Content Creation & Marketing",
+       "body": "Adobe Certified Professional in Content Creation and Marketing Using Adobe Express (earned May 27, 2026).",
+       "images": [
+        "cert-express.png"
+       ]
+      },
+      {
+       "heading": "Visual Design Certification",
+       "body": "Adobe Certified Professional in Visual Design (earned January 9, 2026).",
+       "images": [
+        "cert-visual-design.png"
+       ]
+      },
+      {
+       "heading": "Video Design Certification",
+       "body": "Adobe Certified Professional in Video Design (earned December 19, 2025).",
+       "images": [
+        "cert-video-design.png"
+       ]
+      },
+      {
+       "heading": "Marketing Design Certification",
+       "body": "Adobe Certified Professional in Marketing Design (earned May 27, 2026).",
+       "images": [
+        "cert-marketing-design.png"
+       ]
+      },
+      {
+       "heading": "3D Animation 1",
+       "body": "Certified in 3D Animation 1 (passed 5/29/2026). Standards: 3D animation career paths · the animation production pipeline · animation terms, tools & interface · the 12 principles of animation (via The Illusion of Life) · animating a camera · rendering an animated scene.",
+       "images": [
+        "cert-3d-animation-1.png"
+       ]
+      },
+      {
+       "heading": "3D Animation 2",
+       "body": "Certified in 3D Animation 2 (passed 5/29/2026). Standards: deeper mastery of the 12 principles of animation · pre-production, production & post-production practices · rigging techniques · advanced animation techniques.",
+       "images": [
+        "cert-3d-animation-2.png"
+       ]
+      },
+      {
+       "heading": "Digital Media, Advanced",
+       "body": "Certified in Digital Media, Advanced (passed 2/20/2026). Standards: enhancing digital media design skills · creating a 3D graphic and an intro to animation · planning, designing, creating, evaluating, revising & publishing interactive digital media · developing interactive media projects (computer- or web-based), solo or on a team.",
+       "images": [
+        "cert-dm-advanced.png"
+       ]
+      },
+      {
+       "heading": "Digital Media 2 Certification",
+       "body": "Certified in Digital Media 2 (passed 11/14/25). Standards: Planning/Design/Development · Digital Audio · 2D Animation · Digital Video · Team Activities · Copyright Laws, Ethics & Issues.",
+       "images": [
+        "cert-dm2.png"
+       ]
+      },
+      {
+       "heading": "Digital Media 1 Certification",
+       "body": "Certified in Digital Media 1 (passed 12/12/25). Standards: Design Process · Color Theory · Typography · Vector Graphics · Raster Images · Project Management · Careers & Employability.",
+       "images": [
+        "cert-dm1.png"
+       ]
+      }
      ]
     },
     {
-     "heading": "Adobe Animate Certification",
-     "body": "I am officially certified in Adobe Animate! I'll retake it every 3 years. It was challenging and tough to remember some tool locations, but I pulled through. (Verify via the steps on the bottom-left of the certificate.)",
-     "images": [
-      "cert-animate.png"
-     ]
-    },
-    {
-     "heading": "Digital Media 2 Certification",
-     "body": "Certified in Digital Media 2 (passed 11/14/25). Standards: Planning/Design/Development · Digital Audio · 2D Animation · Digital Video · Team Activities · Copyright Laws, Ethics & Issues.",
-     "images": [
-      "cert-dm2.png"
-     ]
-    },
-    {
-     "heading": "Digital Media 1 Certification",
-     "body": "Certified in Digital Media 1 (passed 12/12/25). Standards: Design Process · Color Theory · Typography · Vector Graphics · Raster Images · Project Management · Careers & Employability.",
-     "images": [
-      "cert-dm1.png"
-     ]
-    },
-    {
-     "heading": "Read Across SC Competition",
-     "body": "A state competition for grades K-12 themed around emphasizing reading across the state. No AI allowed and I can't draw well, so I used gradients as the background and images inside the text. Made in Photoshop.",
-     "note": "Double-click to full-view (1 / 6)",
-     "images": [
-      "g-ace-01.jpg",
-      "g-ace-02.jpg",
-      "g-ace-03.jpg",
-      "g-ace-04.jpg",
-      "g-ace-05.jpg",
-      "g-ace-06.jpg"
-     ]
-    },
-    {
-     "heading": "Read Across SC Competition — Planning",
-     "body": "AI use was NOT allowed, which made it harder — I used a Pexels image to make a mask layer. Not being able to use AI or draw made this a real challenge.",
-     "note": "1 / 2",
-     "images": [
-      "g-ace-07.png",
-      "g-ace-08.png"
-     ]
-    },
-    {
-     "heading": "AI Art Competition",
-     "body": "This was the AI art I submitted, and it got into the competition! (2025 AI Art Competition presented by Comcast — \"Life Through AI Eyes,\" $1,000 in prizes, Arts Center of Greenwood.)",
-     "note": "1 / 5",
-     "images": [
-      "g-ace-09.jpg",
-      "g-ace-10.jpg",
-      "g-ace-11.jpg",
-      "g-ace-12.jpg",
-      "g-ace-13.png"
-     ]
-    },
-    {
-     "heading": "My Art (State Fair 2025)",
-     "images": [
-      "my-art-statefair.png"
-     ]
-    },
-    {
-     "heading": "State Fair Photos 2025",
-     "note": "1 / 14",
-     "images": [
-      "g-ace-14.jpg",
-      "g-ace-15.jpg",
-      "g-ace-16.jpg",
-      "g-ace-17.jpg",
-      "g-ace-18.jpg",
-      "g-ace-19.jpg",
-      "g-ace-20.jpg",
-      "g-ace-21.jpg",
-      "g-ace-22.jpg",
-      "g-ace-23.jpg",
-      "g-ace-24.jpg",
-      "g-ace-25.jpg",
-      "g-ace-26.jpg",
-      "g-ace-27.jpg"
+     "label": "Events",
+     "sections": [
+      {
+       "heading": "Tech Fair — 1st Place",
+       "body": "My team — me, Angel Guzman, and Gio Zapata — took 1st place at the Tech Fair with our game Employee of the Month, a game about working-class struggle and resource management where you play a literal human battery powering a factory under pressure.",
+       "note": "1 / 4",
+       "images": [
+        "g-ace-techfair-01.jpg",
+        "g-ace-techfair-02.jpg",
+        "g-ace-techfair-03.jpg",
+        "g-ace-techfair-04.jpg"
+       ]
+      },
+      {
+       "heading": "Read Across SC Competition",
+       "body": "A state competition for grades K-12 themed around emphasizing reading across the state. No AI allowed and I can't draw well, so I used gradients as the background and images inside the text. Made in Photoshop.",
+       "note": "Double-click to full-view (1 / 6)",
+       "images": [
+        "g-ace-01.jpg",
+        "g-ace-02.jpg",
+        "g-ace-03.jpg",
+        "g-ace-04.jpg",
+        "g-ace-05.jpg",
+        "g-ace-06.jpg"
+       ]
+      },
+      {
+       "heading": "Read Across SC Competition — Planning",
+       "body": "AI use was NOT allowed, which made it harder — I used a Pexels image to make a mask layer. Not being able to use AI or draw made this a real challenge.",
+       "note": "1 / 2",
+       "images": [
+        "g-ace-07.png",
+        "g-ace-08.png"
+       ]
+      },
+      {
+       "heading": "AI Art Competition",
+       "body": "This was the AI art I submitted, and it got into the competition! (2025 AI Art Competition presented by Comcast — \"Life Through AI Eyes,\" $1,000 in prizes, Arts Center of Greenwood.)",
+       "note": "1 / 5",
+       "images": [
+        "g-ace-09.jpg",
+        "g-ace-10.jpg",
+        "g-ace-11.jpg",
+        "g-ace-12.jpg",
+        "g-ace-13.png"
+       ]
+      },
+      {
+       "heading": "My Art (State Fair 2025)",
+       "images": [
+        "my-art-statefair.png"
+       ]
+      },
+      {
+       "heading": "State Fair Photos 2025",
+       "note": "1 / 14",
+       "images": [
+        "g-ace-14.jpg",
+        "g-ace-15.jpg",
+        "g-ace-16.jpg",
+        "g-ace-17.jpg",
+        "g-ace-18.jpg",
+        "g-ace-19.jpg",
+        "g-ace-20.jpg",
+        "g-ace-21.jpg",
+        "g-ace-22.jpg",
+        "g-ace-23.jpg",
+        "g-ace-24.jpg",
+        "g-ace-25.jpg",
+        "g-ace-26.jpg",
+        "g-ace-27.jpg"
+       ]
+      }
      ]
     }
    ]

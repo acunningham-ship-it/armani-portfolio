@@ -42,6 +42,19 @@ function gallery(list) {
     list.map((f, i) => `<button class="g-item" data-i="${i}"><img src="${mediaURL(f)}" alt="" loading="lazy"></button>`).join("") + `</div>`;
 }
 
+function slideshowHTML(list) {
+  list = imgs(list);
+  if (!list.length) return "";
+  return `<div class="slideshow" data-i="0" data-list='${esc(JSON.stringify(list))}'>` +
+    `<div class="ss-stage">` +
+    list.map((f, i) => `<img class="ss-slide${i === 0 ? " active" : ""}" data-i="${i}" src="${mediaURL(f)}" alt="" loading="lazy">`).join("") +
+    `</div>` +
+    `<button class="ss-prev" aria-label="Previous slide">‹</button>` +
+    `<button class="ss-next" aria-label="Next slide">›</button>` +
+    `<div class="ss-count mono">1 / ${list.length}</div>` +
+    `</div>`;
+}
+
 function sectionHTML(s) {
   const list = imgs(s.images || []);
   let h = `<section class="block">`;
@@ -71,10 +84,10 @@ function render(slug) {
     c.innerHTML = `
       <section class="hero container">
         <div class="hero-copy">
-          <p class="mono kicker">Graphic Design Student · Junior Portfolio</p>
+          <p class="mono kicker">Student · AI, Games &amp; Animation</p>
           <h1>Armani <span class="red">Cunningham</span></h1>
-          <p class="tagline">Animation <span class="sep">·</span> Photography <span class="sep">·</span> <span class="purple">Graphic Design</span></p>
-          <p class="lede">I'm a graphic designer and animator with experience in Adobe programs such as Photoshop. Strong creative and analytical skills, a team player with an eye for detail — currently learning to animate and going deeper into graphic design.</p>
+          <p class="tagline">AI <span class="sep">·</span> Animation <span class="sep">·</span> <span class="purple">Game Design</span></p>
+          <p class="lede">I'm a student who builds games, animates, and works hands-on with AI. I've shipped a horror game for my junior mastery, earned a stack of Adobe certifications, and I'm always pushing into whatever tool gets the idea made.</p>
           <div class="cta-group"><a href="#/digital-arts-1" class="btn btn-primary">View the work</a><a href="mailto:hamstudios101@gmail.com" class="btn btn-ghost">Contact</a></div>
         </div>
         <div class="hero-art">${hero ? `<img src="${mediaURL(hero)}" alt="Armani Cunningham">` : ""}<div class="hero-art-frame"></div></div>
@@ -89,7 +102,13 @@ function render(slug) {
   }
 
   let inner = "";
-  if (page.type === "sections") inner = `<div class="section-head"><h2>${esc(page.title)}</h2></div>` + page.sections.map(sectionHTML).join("");
+  if (page.type === "sections") inner = `<div class="section-head"><h2>${esc(page.title)}</h2></div>` + (page.banner || "") + slideshowHTML(page.slideshow || []) + page.sections.map(sectionHTML).join("");
+  else if (page.type === "tabs") {
+    const tabs = page.tabs || [];
+    inner = `<div class="section-head"><h2>${esc(page.title)}</h2></div>` +
+      `<div class="tabbar">` + tabs.map((t, i) => `<button class="tab-btn${i === 0 ? " active" : ""}" data-tab="${i}">${esc(t.label)}</button>`).join("") + `</div>` +
+      tabs.map((t, i) => `<div class="tabpane${i === 0 ? " active" : ""}" data-pane="${i}">` + t.sections.map(sectionHTML).join("") + `</div>`).join("");
+  }
   else if (page.type === "canva") {
     inner = `<div class="section-head"><h2>${esc(page.title)}</h2></div>
       <p class="lede">${esc(page.body)}</p>
@@ -123,6 +142,24 @@ async function init() {
     if (e.key === "Escape") closeLB(); if (e.key === "ArrowLeft") { lb.i--; showLB(); } if (e.key === "ArrowRight") { lb.i++; showLB(); }
   });
   $("#content").addEventListener("click", (e) => {
+    const tb = e.target.closest(".tab-btn");
+    if (tb) {
+      const root = tb.closest(".section"), i = tb.dataset.tab;
+      root.querySelectorAll(".tab-btn").forEach((x) => x.classList.toggle("active", x === tb));
+      root.querySelectorAll(".tabpane").forEach((p) => p.classList.toggle("active", p.dataset.pane === i));
+      window.scrollTo(0, 0); return;
+    }
+    const ssBtn = e.target.closest(".ss-prev, .ss-next");
+    if (ssBtn) {
+      const box = ssBtn.closest(".slideshow"), list = JSON.parse(box.dataset.list);
+      const i = (+box.dataset.i + (ssBtn.classList.contains("ss-next") ? 1 : -1) + list.length) % list.length;
+      box.dataset.i = i;
+      box.querySelectorAll(".ss-slide").forEach((s) => s.classList.toggle("active", +s.dataset.i === i));
+      box.querySelector(".ss-count").textContent = `${i + 1} / ${list.length}`;
+      return;
+    }
+    const slide = e.target.closest(".ss-slide");
+    if (slide) { const box = slide.closest(".slideshow"); openLB(JSON.parse(box.dataset.list), +box.dataset.i); return; }
     const b = e.target.closest(".g-item"); if (!b) return;
     const list = JSON.parse(b.closest(".grid").dataset.gallery);
     openLB(list, +b.dataset.i);
