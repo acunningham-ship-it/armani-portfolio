@@ -302,6 +302,13 @@ window.SITE = {
        }
       },
       {
+       "heading": "Junior Ambassador",
+       "body": "I also got recognized for my contributions as a Junior Ambassador.",
+       "images": [
+        "g-ace-junior-ambassador.jpg"
+       ]
+      },
+      {
        "heading": "Read Across SC Competition",
        "body": "A state competition for grades K-12 themed around emphasizing reading across the state. No AI allowed and I can't draw well, so I used gradients as the background and images inside the text. Made in Photoshop.",
        "note": "Double-click to full-view (1 / 6)",
