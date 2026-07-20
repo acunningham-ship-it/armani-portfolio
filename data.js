@@ -284,6 +284,82 @@ window.SITE = {
    "title": "ACE",
    "tabs": [
     {
+     "label": "Events",
+     "sections": [
+      {
+       "heading": "Tech Fair — 1st Place",
+       "body": "My team — me, Angel Guzman, and Gio Zapata — took 1st place at the Tech Fair with our game Employee of the Month, a game about working-class struggle and resource management where you play a literal human battery powering a factory under pressure.",
+       "note": "1 / 4",
+       "images": [
+        "g-ace-techfair-01.jpg",
+        "g-ace-techfair-02.jpg",
+        "g-ace-techfair-03.jpg",
+        "g-ace-techfair-04.jpg"
+       ]
+      },
+      {
+       "heading": "Read Across SC Competition",
+       "body": "A state competition for grades K-12 themed around emphasizing reading across the state. No AI allowed and I can't draw well, so I used gradients as the background and images inside the text. Made in Photoshop.",
+       "note": "Double-click to full-view (1 / 6)",
+       "images": [
+        "g-ace-01.jpg",
+        "g-ace-02.jpg",
+        "g-ace-03.jpg",
+        "g-ace-04.jpg",
+        "g-ace-05.jpg",
+        "g-ace-06.jpg"
+       ]
+      },
+      {
+       "heading": "Read Across SC Competition — Planning",
+       "body": "AI use was NOT allowed, which made it harder — I used a Pexels image to make a mask layer. Not being able to use AI or draw made this a real challenge.",
+       "note": "1 / 2",
+       "images": [
+        "g-ace-07.png",
+        "g-ace-08.png"
+       ]
+      },
+      {
+       "heading": "AI Art Competition",
+       "body": "This was the AI art I submitted, and it got into the competition! (2025 AI Art Competition presented by Comcast — \"Life Through AI Eyes,\" $1,000 in prizes, Arts Center of Greenwood.)",
+       "note": "1 / 5",
+       "images": [
+        "g-ace-09.jpg",
+        "g-ace-10.jpg",
+        "g-ace-11.jpg",
+        "g-ace-12.jpg",
+        "g-ace-13.png"
+       ]
+      },
+      {
+       "heading": "My Art (State Fair 2025)",
+       "images": [
+        "my-art-statefair.png"
+       ]
+      },
+      {
+       "heading": "State Fair Photos 2025",
+       "note": "1 / 14",
+       "images": [
+        "g-ace-14.jpg",
+        "g-ace-15.jpg",
+        "g-ace-16.jpg",
+        "g-ace-17.jpg",
+        "g-ace-18.jpg",
+        "g-ace-19.jpg",
+        "g-ace-20.jpg",
+        "g-ace-21.jpg",
+        "g-ace-22.jpg",
+        "g-ace-23.jpg",
+        "g-ace-24.jpg",
+        "g-ace-25.jpg",
+        "g-ace-26.jpg",
+        "g-ace-27.jpg"
+       ]
+      }
+     ]
+    },
+    {
      "label": "Certifications",
      "sections": [
       {
@@ -375,82 +451,6 @@ window.SITE = {
        "body": "Certified in Digital Media 1 (passed 12/12/25). Standards: Design Process · Color Theory · Typography · Vector Graphics · Raster Images · Project Management · Careers & Employability.",
        "images": [
         "cert-dm1.png"
-       ]
-      }
-     ]
-    },
-    {
-     "label": "Events",
-     "sections": [
-      {
-       "heading": "Tech Fair — 1st Place",
-       "body": "My team — me, Angel Guzman, and Gio Zapata — took 1st place at the Tech Fair with our game Employee of the Month, a game about working-class struggle and resource management where you play a literal human battery powering a factory under pressure.",
-       "note": "1 / 4",
-       "images": [
-        "g-ace-techfair-01.jpg",
-        "g-ace-techfair-02.jpg",
-        "g-ace-techfair-03.jpg",
-        "g-ace-techfair-04.jpg"
-       ]
-      },
-      {
-       "heading": "Read Across SC Competition",
-       "body": "A state competition for grades K-12 themed around emphasizing reading across the state. No AI allowed and I can't draw well, so I used gradients as the background and images inside the text. Made in Photoshop.",
-       "note": "Double-click to full-view (1 / 6)",
-       "images": [
-        "g-ace-01.jpg",
-        "g-ace-02.jpg",
-        "g-ace-03.jpg",
-        "g-ace-04.jpg",
-        "g-ace-05.jpg",
-        "g-ace-06.jpg"
-       ]
-      },
-      {
-       "heading": "Read Across SC Competition — Planning",
-       "body": "AI use was NOT allowed, which made it harder — I used a Pexels image to make a mask layer. Not being able to use AI or draw made this a real challenge.",
-       "note": "1 / 2",
-       "images": [
-        "g-ace-07.png",
-        "g-ace-08.png"
-       ]
-      },
-      {
-       "heading": "AI Art Competition",
-       "body": "This was the AI art I submitted, and it got into the competition! (2025 AI Art Competition presented by Comcast — \"Life Through AI Eyes,\" $1,000 in prizes, Arts Center of Greenwood.)",
-       "note": "1 / 5",
-       "images": [
-        "g-ace-09.jpg",
-        "g-ace-10.jpg",
-        "g-ace-11.jpg",
-        "g-ace-12.jpg",
-        "g-ace-13.png"
-       ]
-      },
-      {
-       "heading": "My Art (State Fair 2025)",
-       "images": [
-        "my-art-statefair.png"
-       ]
-      },
-      {
-       "heading": "State Fair Photos 2025",
-       "note": "1 / 14",
-       "images": [
-        "g-ace-14.jpg",
-        "g-ace-15.jpg",
-        "g-ace-16.jpg",
-        "g-ace-17.jpg",
-        "g-ace-18.jpg",
-        "g-ace-19.jpg",
-        "g-ace-20.jpg",
-        "g-ace-21.jpg",
-        "g-ace-22.jpg",
-        "g-ace-23.jpg",
-        "g-ace-24.jpg",
-        "g-ace-25.jpg",
-        "g-ace-26.jpg",
-        "g-ace-27.jpg"
        ]
       }
      ]
