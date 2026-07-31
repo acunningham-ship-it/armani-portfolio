@@ -73,19 +73,19 @@ window.SITE = {
    "sections": [
     {
      "heading": "Plane Dread",
-     "body": "Plane Dread is a horror game I built to fix a problem I kept running into — that so many horror games are pedestrian and copies of each other. The deck above walks through the whole build; the breakdown below goes week by week. By the numbers: 25 enemies, 100,000+ possible rounds, and a 25% win rate."
+     "body": "Plane Dread is a horror game I built to fix a problem I kept running into: too many horror games feel generic and copy each other. The slideshow above walks through the whole build, and the breakdown below goes week by week. By the numbers: 25 enemies, more than 100,000 possible rounds, and a 25% win rate."
     },
     {
      "heading": "Research",
-     "body": "This project wasn't really backed by research — it was more my own experiences and YouTube videos I'd picked up over the years. I find research limiting for me, so while I learned a lot here, I also learned I need to account for what's happening as I build and push myself to be more creative."
+     "body": "This project wasn't really backed by formal research. It came from my own experience and from YouTube videos I'd picked up over the years. I find research limiting, so while I learned a lot here, I also learned that I need to pay closer attention to what's happening as I build, and push myself to be more creative."
     },
     {
      "heading": "The Problem",
-     "body": "The problem I set out to tackle was that so many games are copies of each other, especially in horror — like Poppy Playtime getting called the mascot-horror copy of Freddy Fazbear, or the thousands of Granny and Baldi clones that flooded the app store."
+     "body": "The problem I set out to tackle was how many games copy each other, especially in horror. Poppy Playtime gets called a mascot-horror copy of Five Nights at Freddy's, and thousands of Granny and Baldi clones have flooded the app store."
     },
     {
      "heading": "Week 1 — Building the Plane",
-     "body": "Week 1 was developing the plane and nav-meshing the player and map. My first real problem was the nav mesh trying to spawn on the roof of the plane when I baked the floor. Box colliders went on every single chair so the player couldn't clip through them.",
+     "body": "Week 1 was building the plane and setting up the navigation mesh, the invisible map that tells characters where they're allowed to walk. My first real problem was the mesh generating on the roof of the plane instead of the floor. I also put a collider on every single chair so the player couldn't walk straight through them.",
      "images": [
       "g-junior-mastery-01.png",
       "g-junior-mastery-02.png",
@@ -95,27 +95,27 @@ window.SITE = {
     },
     {
      "heading": "Week 2 — The Puzzles",
-     "body": "Week 2 was dedicated to the puzzles. The Breaker puzzle was inspired by the same puzzle from Doors, but I added the Puzzler enemy to make it more nerve-wracking than it should be, and rebuilt the breaker from scratch using Claude and MCP. The Cockpit is a puzzle where you turn dials to realign the plane's system settings."
+     "body": "Week 2 was dedicated to the puzzles. The Breaker puzzle was inspired by the same puzzle in Doors, but I added the Puzzler enemy to make it far more nerve-wracking, and I rebuilt the breaker from scratch with help from Claude. In the Cockpit puzzle you turn dials to realign the plane's systems."
     },
     {
      "heading": "Week 3 — The Enemies (the hardest part)",
-     "body": "Week 3 was making the enemies, and it was really frustrating — a ton of bugs. Henry would sometimes stand the passengers up or contort their legs backwards, which gave away which passenger had become Henry. Puzzler went through several remodels (the first one looked like some Wizard of Oz thing), and Peeper had a bug where he'd spawn in invisibly and kill the player."
+     "body": "Week 3 was making the enemies, and it was easily the most frustrating week: a huge number of bugs. Henry would sometimes stand the passengers up or bend their legs backwards, which gave away exactly which passenger he had taken over. Puzzler went through several remodels (the first one looked like something out of The Wizard of Oz), and Peeper had a bug where he would spawn in invisible and kill the player."
     },
     {
      "heading": "The Enemies",
-     "body": "These are the enemies you can actually see during a round — the rest are abstract. Puzzler attacks during puzzles. Peeper makes you watch the bathroom door. Bloodhound stalks you throughout the plane. And Henry — you'd never notice he's there until it's too late."
+     "body": "These are the enemies you can actually see during a round; the rest are abstract. Puzzler attacks during puzzles. Peeper makes you watch the bathroom door. Bloodhound stalks you through the plane. And Henry — you'd never notice he was there until it was too late."
     },
     {
      "heading": "AI Models I Used",
-     "body": "Claude did a good 85% of the coding. Owl-Alpha, a free beta model in testing, did the rest. Deepseek helped me visualize the plan, and Tripo3D helped me model the enemy models I couldn't build myself in time."
+     "body": "Claude did roughly 85% of the coding, and Owl-Alpha, a free beta model still in testing, did the rest. DeepSeek helped me visualize the plan, and Tripo3D built the enemy models I didn't have time to make myself."
     },
     {
      "heading": "Debugging",
-     "body": "There were several bugs throughout, and the game still isn't fully finished. Decompression — an enemy that kills you if you stay near the front of the plane — would randomly kill you with no cue. And the oxygen system didn't work at first, so you'd eventually die near a mask during a pressure-drop round."
+     "body": "There were plenty of bugs along the way, and the game still isn't finished. Decompression, an enemy that gets you if you linger near the front of the plane, would strike at random with no warning at all. The oxygen system didn't work at first either, so during a pressure-drop round you could die standing right next to a mask."
     },
     {
      "heading": "The End… for now",
-     "body": "This game will be fully bug-fixed and updated in the future. Thanks for witnessing this junior mastery."
+     "body": "I'll keep fixing bugs and updating this game in the future. Thanks for taking the time to look through my junior mastery."
     }
    ]
   },
@@ -131,9 +131,9 @@ window.SITE = {
    "title": "Digital Arts",
    "sections": [
     {
-     "heading": "Final SkillShare Projects",
+     "heading": "Final Skillshare Projects",
      "sub": "Fashion Glitch",
-     "body": "This is the final glitch effect project following the tutorial linked below. I had to use various hue/saturation effects and a layer mask.",
+     "body": "This is the final glitch-effect project, following the tutorial linked below. I used a range of hue and saturation adjustments along with a layer mask.",
      "note": "1 / 11",
      "images": [
       "g-digital-arts-1-01.jpg",
@@ -150,9 +150,9 @@ window.SITE = {
      ]
     },
     {
-     "heading": "SkillShare Project 2",
+     "heading": "Skillshare Project 2",
      "sub": "Easily Make This Paper Cutout Style Graphic Using Adobe Photoshop's AI",
-     "body": "Another tutorial — putting images into text through clip masking. I generated images with gemini and firefly, then used layers and clip masking to mask the images to text I clipped into shapes.",
+     "body": "Another tutorial, this time placing images inside text using clipping masks. I generated the images with Gemini and Firefly, then used layers and clipping masks to fit each image into the letters.",
      "note": "Double-click the gallery to see the process start to finish (1 / 4)",
      "images": [
       "g-digital-arts-1-12.jpg",
@@ -164,7 +164,7 @@ window.SITE = {
     {
      "heading": "Skillshare Project 1",
      "sub": "Photoshop Workflows — Movie Poster",
-     "body": "I added the text at the top, got the cropping ready, and it was done. I learned more about cropping/selecting and using layers — I had to move the businessman's arm over the table layer but keep his body under it.",
+     "body": "I added the text at the top, finished the cropping, and it was done. I learned a lot more about cropping, selecting and layers here — I had to bring the businessman's arm in front of the table while keeping the rest of his body behind it.",
      "note": "Double-click the gallery to see the process start to finish (1 / 3)",
      "images": [
       "g-digital-arts-1-16.png",
@@ -175,7 +175,7 @@ window.SITE = {
     {
      "heading": "Inktober Work",
      "sub": "Halloween String Lights",
-     "body": "Inktober is a yearly event for artists each Halloween, with a daily black-and-white prompt. Prompts include Award, Vacant, Lesson, Skeletal, Onion, Rowdy, Firefly, Button, Blast and more.",
+     "body": "Inktober is an annual art challenge that runs through October, with a new black-and-white prompt every day. The prompts include Award, Vacant, Lesson, Skeletal, Onion, Rowdy, Firefly, Button and Blast.",
      "images": [
       "g-digital-arts-1-19.jpg",
       "g-digital-arts-1-20.png",
@@ -222,7 +222,7 @@ window.SITE = {
     },
     {
      "heading": "Adobe Express Animation",
-     "body": "For my animation video in Adobe Express I used T's as the border with a bouncing effect — it represented my brand idea well with the purple, white and black.",
+     "body": "For my animation video in Adobe Express I used Ts as the border, with a bouncing effect. The purple, white and black represented my brand idea well.",
      "video": "express-animation.mp4",
      "images": []
     },
@@ -236,7 +236,7 @@ window.SITE = {
     },
     {
      "heading": "Famous Quote Typography",
-     "body": "I chose the quote \"So many books, so little time.\" I made \"many\" bigger and \"little\" smaller to show their importance, and added B's on the side like book binding to fill the empty space. The simple, empty look makes it better.",
+     "body": "I chose the quote \"So many books, so little time.\" I set \"many\" large and \"little\" small so the sizing matched the meaning of each word, and added Bs down the side like a book's binding to fill the empty space. The simple, uncluttered look is what makes it work.",
      "images": [
       "famous-quote.png",
       "g-digital-arts-2-07.png"
@@ -244,7 +244,7 @@ window.SITE = {
     },
     {
      "heading": "Typography Album Poster",
-     "body": "A CD cover for the band Living Tombstone and the FNAF songs they make. Green and orange for their logo, plus the animatronics' colors for the FNAF text. I layered T's around the corner for structure.",
+     "body": "A CD cover for The Living Tombstone and the Five Nights at Freddy's songs they make. I used green and orange for their logo, and the animatronics' colors for the FNAF text. I layered Ts around the corners to give it structure.",
      "images": [
       "album-poster.png",
       "g-digital-arts-2-08.png"
@@ -252,7 +252,7 @@ window.SITE = {
     },
     {
      "heading": "Infographic Understanding",
-     "body": "Creating a brand involves identity, presence, consistency, and uniqueness — consistent colors, fonts and images across your branding, relevant to you. Don't build a fake persona that's different from your real self, and don't copy others; have your own unique brand even in the same niche.",
+     "body": "Creating a brand comes down to identity, presence, consistency and uniqueness: the same colors, fonts and images across everything, all relevant to you. Don't build a fake persona that isn't who you really are, and don't copy other people. Even in a crowded niche, your brand should be your own.",
      "note": "1 / 2",
      "images": [
       "g-digital-arts-2-09.png",
@@ -474,7 +474,7 @@ window.SITE = {
    "sections": [
     {
      "heading": "Image Editing 1",
-     "body": "This is all my work from my 24-25 image editing class!",
+     "body": "All of my work from my 2024–25 Image Editing class.",
      "images": [
       "g-image-editing-01.jpg"
      ]
