@@ -88,7 +88,7 @@ function render(slug) {
           <p class="mono kicker">Student · AI, Games &amp; Animation</p>
           <h1>Armani <span class="red">Cunningham</span></h1>
           <p class="tagline">AI <span class="sep">·</span> Animation <span class="sep">·</span> <span class="purple">Game Design</span></p>
-          <p class="lede">I'm a student who builds games, animates, and works hands-on with AI. I've shipped a horror game for my junior mastery, earned a stack of Adobe certifications, and I'm always pushing into whatever tool gets the idea made.</p>
+          <p class="lede">I'm a student who builds games, makes animations, and works hands-on with AI. I've shipped a horror game for my junior mastery, earned a stack of Adobe certifications, and I'll pick up whatever tool gets the idea made.</p>
           <div class="cta-group"><a href="#/digital-arts-1" class="btn btn-primary">View the work</a><a href="mailto:hamstudios101@gmail.com" class="btn btn-ghost">Contact</a></div>
         </div>
         <div class="hero-art">${hero ? `<img src="${mediaURL(hero)}" alt="Armani Cunningham">` : ""}<div class="hero-art-frame"></div></div>
