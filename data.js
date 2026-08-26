@@ -57,17 +57,17 @@ window.SITE = {
    "type": "sections",
    "title": "Junior Mastery — Plane Dread",
    "slideshow": [
-    "g-jm-slide-01.png",
+    "g-jm-slide-01.jpg",
     "g-jm-slide-02.png",
-    "g-jm-slide-03.png",
-    "g-jm-slide-04.png",
-    "g-jm-slide-05.png",
-    "g-jm-slide-06.png",
-    "g-jm-slide-07.png",
-    "g-jm-slide-08.png",
+    "g-jm-slide-03.jpg",
+    "g-jm-slide-04.jpg",
+    "g-jm-slide-05.jpg",
+    "g-jm-slide-06.jpg",
+    "g-jm-slide-07.jpg",
+    "g-jm-slide-08.jpg",
     "g-jm-slide-09.png",
     "g-jm-slide-10.png",
-    "g-jm-slide-11.png",
+    "g-jm-slide-11.jpg",
     "g-jm-slide-12.png"
    ],
    "sections": [
@@ -139,14 +139,14 @@ window.SITE = {
       "g-digital-arts-1-01.jpg",
       "g-digital-arts-1-02.jpg",
       "g-digital-arts-1-03.png",
-      "g-digital-arts-1-04.png",
+      "g-digital-arts-1-04.jpg",
       "g-digital-arts-1-05.jpg",
       "g-digital-arts-1-06.jpg",
-      "g-digital-arts-1-07.png",
+      "g-digital-arts-1-07.jpg",
       "g-digital-arts-1-08.jpg",
       "g-digital-arts-1-09.jpg",
       "g-digital-arts-1-10.jpg",
-      "g-digital-arts-1-11.png"
+      "g-digital-arts-1-11.jpg"
      ]
     },
     {
@@ -158,7 +158,7 @@ window.SITE = {
       "g-digital-arts-1-12.jpg",
       "g-digital-arts-1-13.png",
       "g-digital-arts-1-14.png",
-      "g-digital-arts-1-15.png"
+      "g-digital-arts-1-15.jpg"
      ]
     },
     {
@@ -167,9 +167,9 @@ window.SITE = {
      "body": "I added the text at the top, finished the cropping, and it was done. I learned a lot more about cropping, selecting and layers here — I had to bring the businessman's arm in front of the table while keeping the rest of his body behind it.",
      "note": "Double-click the gallery to see the process start to finish (1 / 3)",
      "images": [
-      "g-digital-arts-1-16.png",
-      "g-digital-arts-1-17.png",
-      "g-digital-arts-1-18.png"
+      "g-digital-arts-1-16.jpg",
+      "g-digital-arts-1-17.jpg",
+      "g-digital-arts-1-18.jpg"
      ]
     },
     {
@@ -178,14 +178,14 @@ window.SITE = {
      "body": "Inktober is an annual art challenge that runs through October, with a new black-and-white prompt every day. The prompts include Award, Vacant, Lesson, Skeletal, Onion, Rowdy, Firefly, Button and Blast.",
      "images": [
       "g-digital-arts-1-19.jpg",
-      "g-digital-arts-1-20.png",
+      "g-digital-arts-1-20.jpg",
       "g-digital-arts-1-21.jpg",
       "g-digital-arts-1-22.jpg",
       "g-digital-arts-1-23.jpg",
       "g-digital-arts-1-24.jpg",
       "g-digital-arts-1-25.jpg",
       "g-digital-arts-1-26.jpg",
-      "g-digital-arts-1-27.png",
+      "g-digital-arts-1-27.jpg",
       "g-digital-arts-1-28.jpg",
       "g-digital-arts-1-29.jpg",
       "g-digital-arts-1-30.jpg",
@@ -198,7 +198,7 @@ window.SITE = {
       "g-digital-arts-1-37.jpg",
       "g-digital-arts-1-38.jpg",
       "g-digital-arts-1-39.jpg",
-      "g-digital-arts-1-40.png",
+      "g-digital-arts-1-40.jpg",
       "g-digital-arts-1-41.jpg",
       "g-digital-arts-1-42.jpg",
       "g-digital-arts-1-43.jpg"
@@ -214,10 +214,10 @@ window.SITE = {
     {
      "heading": "Digital Branding Assets",
      "images": [
-      "g-digital-arts-2-01.png",
-      "g-digital-arts-2-02.png",
-      "g-digital-arts-2-03.png",
-      "g-digital-arts-2-04.png"
+      "g-digital-arts-2-01.jpg",
+      "g-digital-arts-2-02.jpg",
+      "g-digital-arts-2-03.jpg",
+      "g-digital-arts-2-04.jpg"
      ]
     },
     {
@@ -231,7 +231,7 @@ window.SITE = {
      "note": "1 / 2",
      "images": [
       "g-digital-arts-2-05.jpg",
-      "g-digital-arts-2-06.png"
+      "g-digital-arts-2-06.jpg"
      ]
     },
     {
@@ -255,18 +255,18 @@ window.SITE = {
      "body": "Creating a brand comes down to identity, presence, consistency and uniqueness: the same colors, fonts and images across everything, all relevant to you. Don't build a fake persona that isn't who you really are, and don't copy other people. Even in a crowded niche, your brand should be your own.",
      "note": "1 / 2",
      "images": [
-      "g-digital-arts-2-09.png",
-      "g-digital-arts-2-10.png"
+      "g-digital-arts-2-09.jpg",
+      "g-digital-arts-2-10.jpg"
      ]
     },
     {
      "heading": "Creating My Brand",
      "note": "A little about me! (1 / 4)",
      "images": [
-      "g-digital-arts-2-11.png",
+      "g-digital-arts-2-11.jpg",
       "g-digital-arts-2-12.png",
-      "g-digital-arts-2-13.png",
-      "g-digital-arts-2-14.png"
+      "g-digital-arts-2-13.jpg",
+      "g-digital-arts-2-14.jpg"
      ]
     }
    ]
@@ -327,7 +327,7 @@ window.SITE = {
        "note": "1 / 2",
        "images": [
         "g-ace-07.png",
-        "g-ace-08.png"
+        "g-ace-08.jpg"
        ]
       },
       {
@@ -345,7 +345,7 @@ window.SITE = {
       {
        "heading": "My Art (State Fair 2025)",
        "images": [
-        "my-art-statefair.png"
+        "my-art-statefair.jpg"
        ]
       },
       {
@@ -377,56 +377,56 @@ window.SITE = {
        "heading": "Adobe Photoshop Certification",
        "body": "I am officially certified in Adobe Photoshop! I'll retake it every 3 years, but I'm very proud — I was stressed clicking submit but passed with a high score. (Verify via the steps on the bottom-left of the certificate.)",
        "images": [
-        "cert-photoshop.png"
+        "cert-photoshop.jpg"
        ]
       },
       {
        "heading": "Adobe Animate Certification",
        "body": "I am officially certified in Adobe Animate! I'll retake it every 3 years. It was challenging and tough to remember some tool locations, but I pulled through. (Verify via the steps on the bottom-left of the certificate.)",
        "images": [
-        "cert-animate.png"
+        "cert-animate.jpg"
        ]
       },
       {
        "heading": "Adobe Premiere Pro — Digital Video",
        "body": "Adobe Certified Professional in Digital Video Using Adobe Premiere Pro (earned December 19, 2025). Verify it with the code on the bottom-left of the certificate.",
        "images": [
-        "cert-premiere.png"
+        "cert-premiere.jpg"
        ]
       },
       {
        "heading": "Adobe InDesign — Print & Digital Media Publication",
        "body": "Adobe Certified Professional in Print & Digital Media Publication Using Adobe InDesign (earned January 9, 2026). Verify it with the code on the certificate.",
        "images": [
-        "cert-indesign.png"
+        "cert-indesign.jpg"
        ]
       },
       {
        "heading": "Adobe Express — Content Creation & Marketing",
        "body": "Adobe Certified Professional in Content Creation and Marketing Using Adobe Express (earned May 27, 2026).",
        "images": [
-        "cert-express.png"
+        "cert-express.jpg"
        ]
       },
       {
        "heading": "Visual Design Certification",
        "body": "Adobe Certified Professional in Visual Design (earned January 9, 2026).",
        "images": [
-        "cert-visual-design.png"
+        "cert-visual-design.jpg"
        ]
       },
       {
        "heading": "Video Design Certification",
        "body": "Adobe Certified Professional in Video Design (earned December 19, 2025).",
        "images": [
-        "cert-video-design.png"
+        "cert-video-design.jpg"
        ]
       },
       {
        "heading": "Marketing Design Certification",
        "body": "Adobe Certified Professional in Marketing Design (earned May 27, 2026).",
        "images": [
-        "cert-marketing-design.png"
+        "cert-marketing-design.jpg"
        ]
       },
       {
@@ -454,14 +454,14 @@ window.SITE = {
        "heading": "Digital Media 2 Certification",
        "body": "Certified in Digital Media 2 (passed 11/14/25). Standards: Planning/Design/Development · Digital Audio · 2D Animation · Digital Video · Team Activities · Copyright Laws, Ethics & Issues.",
        "images": [
-        "cert-dm2.png"
+        "cert-dm2.jpg"
        ]
       },
       {
        "heading": "Digital Media 1 Certification",
        "body": "Certified in Digital Media 1 (passed 12/12/25). Standards: Design Process · Color Theory · Typography · Vector Graphics · Raster Images · Project Management · Careers & Employability.",
        "images": [
-        "cert-dm1.png"
+        "cert-dm1.jpg"
        ]
       }
      ]
