@@ -114,6 +114,7 @@ img{max-width:100%;display:block}
 .ss-stage{position:relative;width:100%;height:100%}
 .ss-slide{display:none;width:100%;height:100%;object-fit:contain;cursor:zoom-in}
 .ss-slide.active{display:block}
+.ss-title{font-size:22px;font-weight:600;margin:6px 0 12px}
 .ss-prev,.ss-next{position:absolute;top:50%;transform:translateY(-50%);background:rgba(20,20,20,.72);border:1px solid var(--border2);color:#fff;cursor:pointer;border-radius:10px;font-size:26px;line-height:1;padding:6px 15px}
 .ss-prev:hover,.ss-next:hover{border-color:var(--red)}
 .ss-prev{left:14px}.ss-next{right:14px}

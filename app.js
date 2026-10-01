@@ -42,10 +42,15 @@ function gallery(list) {
     list.map((f, i) => `<button class="g-item" data-i="${i}"><img src="${mediaURL(f)}" alt="" loading="lazy"></button>`).join("") + `</div>`;
 }
 
-function slideshowHTML(list) {
-  list = imgs(list);
+// slides may be filenames or { file, title } objects; titles show as a header above the slideshow
+function slideshowHTML(spec) {
+  const titles = {};
+  if (Array.isArray(spec)) spec = spec.map((s) => (typeof s === "object" ? (titles[s.file] = s.title, s.file) : s));
+  const list = imgs(spec);
   if (!list.length) return "";
-  return `<div class="slideshow" data-i="0" data-list='${esc(JSON.stringify(list))}'>` +
+  const t = list.map((f) => titles[f] || "");
+  return (t.some(Boolean) ? `<h3 class="ss-title">${esc(t[0])}</h3>` : "") +
+    `<div class="slideshow" data-i="0" data-list='${esc(JSON.stringify(list))}' data-titles='${esc(JSON.stringify(t))}'>` +
     `<div class="ss-stage">` +
     list.map((f, i) => `<img class="ss-slide${i === 0 ? " active" : ""}" data-i="${i}" src="${mediaURL(f)}" alt="" loading="lazy">`).join("") +
     `</div>` +
@@ -95,7 +100,7 @@ function render(slug) {
       </section>
       <section class="container" style="padding:0 24px 56px">
         <div class="section-head"><h2>Explore the <span class="red">work</span></h2></div>
-        <div class="tiles">${["junior-mastery","animation","digital-arts-1","digital-arts-2","ace","image-editing"]
+        <div class="tiles">${["junior-year","sophomore-year","breadth","senior-mastery","class-projects","ace"]
           .map((s) => `<a class="tile" href="#/${s}"><span class="tile-title">${esc(P[s].title)}</span></a>`).join("")}</div>
         ${featured.length ? `<div class="section-head" style="margin-top:48px"><h2>Featured <span class="purple">Work</span></h2></div>${gallery(featured)}` : ""}
       </section>`;
@@ -104,6 +109,9 @@ function render(slug) {
 
   let inner = "";
   if (page.type === "sections") inner = `<div class="section-head"><h2>${esc(page.title)}</h2></div>` + (page.banner || "") + slideshowHTML(page.slideshow || []) + page.sections.map(sectionHTML).join("");
+  else if (page.type === "hub")
+    inner = `<div class="section-head"><h2>${esc(page.title)}</h2></div><div class="tiles">` +
+      page.children.map((s) => `<a class="tile" href="#/${s}"><span class="tile-title">${esc(P[s].title)}</span></a>`).join("") + `</div>`;
   else if (page.type === "tabs") {
     const tabs = page.tabs || [];
     inner = `<div class="section-head"><h2>${esc(page.title)}</h2></div>` +
@@ -127,7 +135,12 @@ function render(slug) {
   c.innerHTML = `<section class="section container">${inner}</section>`;
 }
 
-function route() { render(location.hash.replace(/^#\//, "") || "home"); }
+const MOVED = { "image-editing": "sophomore-year", portfolio: "home" };   // old links keep working
+function route() {
+  const slug = location.hash.replace(/^#\//, "") || "home";
+  if (MOVED[slug]) { location.replace("#/" + MOVED[slug]); return; }
+  render(slug);
+}
 
 async function init() {
   $("#nav-links").innerHTML = navHTML();
@@ -157,6 +170,8 @@ async function init() {
       box.dataset.i = i;
       box.querySelectorAll(".ss-slide").forEach((s) => s.classList.toggle("active", +s.dataset.i === i));
       box.querySelector(".ss-count").textContent = `${i + 1} / ${list.length}`;
+      const title = box.previousElementSibling;
+      if (title && title.classList.contains("ss-title")) title.textContent = JSON.parse(box.dataset.titles)[i];
       return;
     }
     const slide = e.target.closest(".ss-slide");

@@ -5,32 +5,52 @@ window.SITE = {
    "title": "Home"
   },
   {
-   "slug": "junior-mastery",
-   "title": "Junior Mastery"
+   "slug": "junior-year",
+   "title": "Junior Year",
+   "children": [
+    {
+     "slug": "junior-mastery",
+     "title": "Junior Mastery"
+    },
+    {
+     "slug": "animation",
+     "title": "Animation"
+    },
+    {
+     "slug": "digital-arts-1",
+     "title": "Digital Arts 1"
+    },
+    {
+     "slug": "digital-arts-2",
+     "title": "Digital Arts 2"
+    }
+   ]
   },
   {
-   "slug": "animation",
-   "title": "Animation"
+   "slug": "sophomore-year",
+   "title": "Sophomore Year"
   },
   {
-   "slug": "digital-arts-1",
-   "title": "Digital Arts 1"
+   "slug": "breadth",
+   "title": "Breadth"
   },
   {
-   "slug": "digital-arts-2",
-   "title": "Digital Arts 2"
+   "slug": "senior-mastery",
+   "title": "Senior Mastery"
   },
   {
-   "slug": "portfolio",
-   "title": "Portfolio"
+   "slug": "class-projects",
+   "title": "Class Projects",
+   "children": [
+    {
+     "slug": "inktober",
+     "title": "Inktober"
+    }
+   ]
   },
   {
    "slug": "ace",
    "title": "ACE"
-  },
-  {
-   "slug": "image-editing",
-   "title": "Image Editing"
   },
   {
    "slug": "resources",
@@ -52,6 +72,16 @@ window.SITE = {
    "type": "home",
    "hero": "IMG_3622.JPG",
    "featured": []
+  },
+  "junior-year": {
+   "type": "hub",
+   "title": "Junior Year",
+   "children": [
+    "junior-mastery",
+    "animation",
+    "digital-arts-1",
+    "digital-arts-2"
+   ]
   },
   "junior-mastery": {
    "type": "sections",
@@ -271,13 +301,48 @@ window.SITE = {
     }
    ]
   },
-  "portfolio": {
-   "type": "text",
-   "title": "My Portfolio",
-   "body": "Portfolio coming soon — see my work on the <a href='#/digital-arts-1'>Digital Arts</a> and <a href='#/ace'>ACE</a> pages.",
-   "images": [
-    "portfolio-construction.png"
+  "sophomore-year": {
+   "type": "sections",
+   "title": "Sophomore Year",
+   "sections": [
+    {
+     "heading": "Image Editing 1",
+     "body": "All of my work from my 2024–25 Image Editing class.",
+     "images": [
+      "g-image-editing-01.jpg"
+     ]
+    }
    ]
+  },
+  "breadth": {
+   "type": "text",
+   "title": "Breadth",
+   "body": "Breadth work coming soon.",
+   "images": []
+  },
+  "senior-mastery": {
+   "type": "text",
+   "title": "Senior Mastery",
+   "body": "Senior mastery project coming soon.",
+   "images": []
+  },
+  "class-projects": {
+   "type": "hub",
+   "title": "Class Projects",
+   "children": [
+    "inktober"
+   ]
+  },
+  "inktober": {
+   "type": "sections",
+   "title": "Inktober",
+   "slideshow": [
+    {
+     "file": "AppleDay1ArmaniCunningham.jpg",
+     "title": "Apple - Day 1"
+    }
+   ],
+   "sections": []
   },
   "ace": {
    "type": "tabs",
@@ -464,19 +529,6 @@ window.SITE = {
         "cert-dm1.jpg"
        ]
       }
-     ]
-    }
-   ]
-  },
-  "image-editing": {
-   "type": "sections",
-   "title": "Image Editing 1",
-   "sections": [
-    {
-     "heading": "Image Editing 1",
-     "body": "All of my work from my 2024–25 Image Editing class.",
-     "images": [
-      "g-image-editing-01.jpg"
      ]
     }
    ]
