@@ -342,6 +342,10 @@ window.SITE = {
      "title": "Apple - Day 1"
     },
     {
+     "file": "RingDay2ArmaniCunningham.jpg",
+     "title": "Ring - Day 2"
+    },
+    {
      "file": "HandDay5ArmaniCunningham.jpg",
      "title": "Hand - Day 5"
     },
