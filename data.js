@@ -356,6 +356,10 @@ window.SITE = {
     {
      "file": "PanicDay7ArmaniCunningham.jpg",
      "title": "Panic - Day 7"
+    },
+    {
+     "file": "TrashCanDay8ArmaniCunningham.jpg",
+     "title": "Trash Can - Day 8"
     }
    ],
    "sections": []
