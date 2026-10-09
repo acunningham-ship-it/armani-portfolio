@@ -360,6 +360,10 @@ window.SITE = {
     {
      "file": "TrashCanDay8ArmaniCunningham.jpg",
      "title": "Trash Can - Day 8"
+    },
+    {
+     "file": "RamDay9ArmaniCunningham.jpg",
+     "title": "RAM - Day 9"
     }
    ],
    "sections": []
