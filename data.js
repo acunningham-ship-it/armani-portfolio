@@ -368,6 +368,14 @@ window.SITE = {
     {
      "file": "LadyDay14ArmaniCunningham.jpg",
      "title": "Lady - Day 14"
+    },
+    {
+     "file": "Day19ArmaniCunningham.jpg",
+     "title": "Confusion - Day 19"
+    },
+    {
+     "file": "LoungeDay20ArmaniCunningham.jpg",
+     "title": "Lounge - Day 20"
     }
    ],
    "sections": []
