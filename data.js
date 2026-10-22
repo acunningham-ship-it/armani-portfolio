@@ -380,6 +380,10 @@ window.SITE = {
     {
      "file": "HeroDay21ArmaniCunningham.jpg",
      "title": "Hero - Day 21"
+    },
+    {
+     "file": "BeaconDay22ArmaniCunningham.jpg",
+     "title": "Beacon - Day 22"
     }
    ],
    "sections": []
