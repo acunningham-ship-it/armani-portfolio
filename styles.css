@@ -69,6 +69,17 @@ img{max-width:100%;display:block}
 .g-item:hover{transform:translateY(-4px);border-color:var(--red)}
 .g-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.g-item:hover img{transform:scale(1.06)}
 
+/* ARTWORK SHOWCASE — matted frames for traced / generated pieces */
+.art-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:20px}
+.art-item{margin:0;cursor:zoom-in}
+.art-mat{display:flex;align-items:center;justify-content:center;height:380px;padding:22px;background:#f2f1ee;border:1px solid var(--border2);border-radius:var(--rlg);transition:transform .2s,border-color .2s}
+.art-item:hover .art-mat{transform:translateY(-4px);border-color:var(--red)}
+.art-mat img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.art-item figcaption{display:flex;flex-direction:column;gap:3px;padding:12px 2px 0}
+.art-label{font-weight:600;font-size:16px}
+.art-cap{color:var(--dim);font-size:14px}
+.art-item:focus-visible{outline:2px solid var(--red);outline-offset:4px}
+
 /* LINKS + VOCAB */
 .links{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
 .link-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px 20px;display:flex;justify-content:space-between;align-items:center;font-weight:600;transition:border-color .2s,transform .15s}
@@ -96,6 +107,7 @@ img{max-width:100%;display:block}
   .nav-links{display:none;position:absolute;top:56px;left:0;right:0;background:#0d0d0d;border-bottom:1px solid var(--border);flex-direction:column;align-items:flex-start;gap:0;padding:8px 24px 16px}
   .nav-links.open{display:flex}.nav-links a{padding:10px 0;font-size:15px;width:100%}
   .nav-drop{width:100%}.nav-menu{display:flex;position:static;border:none;padding:0 0 0 14px;background:none}
+  .art-mat{height:300px;padding:16px}
 }
 
 /* TABS */

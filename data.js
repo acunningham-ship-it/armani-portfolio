@@ -43,6 +43,10 @@ window.SITE = {
    "title": "Class Projects",
    "children": [
     {
+     "slug": "domain-4-lesson-2",
+     "title": "Domain 4 Lesson 2"
+    },
+    {
      "slug": "inktober",
      "title": "Inktober"
     }
@@ -330,7 +334,27 @@ window.SITE = {
    "type": "hub",
    "title": "Class Projects",
    "children": [
+    "domain-4-lesson-2",
     "inktober"
+   ]
+  },
+  "domain-4-lesson-2": {
+   "type": "showcase",
+   "title": "Domain 4 Lesson 2 — Illustrator Image Trace & AI Generation",
+   "lede": "Two exercises from Domain 4, Lesson 2: generating an image with AI, then turning a photo into editable vectors with Illustrator's Image Trace.",
+   "works": [
+    {
+     "file": "g-d4l2-leaf.png",
+     "label": "AI Generation",
+     "alt": "Navy and white leaf logo mark inside a circular border",
+     "caption": "An AI-generated logo mark, cleaned up into flat vector shapes."
+    },
+    {
+     "file": "g-d4l2-portrait.png",
+     "label": "Image Trace",
+     "alt": "High-contrast black and white traced portrait",
+     "caption": "A photograph knocked down to pure black and white, then traced into vectors."
+    }
    ]
   },
   "inktober": {
@@ -384,6 +408,14 @@ window.SITE = {
     {
      "file": "BeaconDay22ArmaniCunningham.jpg",
      "title": "Beacon - Day 22"
+    },
+    {
+     "file": "ZipDay26ArmaniCunningham.jpg",
+     "title": "Zip - Day 26"
+    },
+    {
+     "file": "DumbDay27ArmaniCunningham.jpg",
+     "title": "Dumb - Day 27"
     }
    ],
    "sections": []

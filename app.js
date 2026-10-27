@@ -123,6 +123,18 @@ function render(slug) {
       <p class="lede">${esc(page.body)}</p>
       <a class="btn btn-primary" href="${esc(page.canva)}" target="_blank" rel="noopener">Open my Canva animation site ↗</a>
       ${gallery(imgs(page.images || []))}`;
+  } else if (page.type === "showcase") {
+    const works = (page.works || []).filter((w) => FILES.includes(w.file));
+    const list = works.map((w) => w.file);
+    inner = `<div class="section-head"><h2>${esc(page.title)}</h2></div>` +
+      (page.lede ? `<p class="lede">${esc(page.lede)}</p>` : "") +
+      (list.length ? `<div class="art-grid" data-gallery='${esc(JSON.stringify(list))}'>` +
+        works.map((w, i) => `<figure class="art-item" data-i="${i}">` +
+          `<div class="art-mat"><img src="${mediaURL(w.file)}" alt="${esc(w.alt || w.label || "")}" loading="lazy"></div>` +
+          `<figcaption><span class="art-label">${esc(w.label || "")}</span>` +
+          (w.caption ? `<span class="art-cap">${esc(w.caption)}</span>` : "") +
+          `</figcaption></figure>`).join("") +
+        `</div>` : "");
   } else if (page.type === "text")
     inner = `<div class="section-head"><h2>${esc(page.title)}</h2></div><p class="lede">${page.body}</p>${gallery(imgs(page.images || []))}`;
   else if (page.type === "links")
@@ -176,6 +188,8 @@ async function init() {
     }
     const slide = e.target.closest(".ss-slide");
     if (slide) { const box = slide.closest(".slideshow"); openLB(JSON.parse(box.dataset.list), +box.dataset.i); return; }
+    const art = e.target.closest(".art-item");
+    if (art) { openLB(JSON.parse(art.closest(".art-grid").dataset.gallery), +art.dataset.i); return; }
     const b = e.target.closest(".g-item"); if (!b) return;
     const list = JSON.parse(b.closest(".grid").dataset.gallery);
     openLB(list, +b.dataset.i);
