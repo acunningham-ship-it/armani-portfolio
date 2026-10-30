@@ -416,6 +416,18 @@ window.SITE = {
     {
      "file": "DumbDay27ArmaniCunningham.jpg",
      "title": "Dumb - Day 27"
+    },
+    {
+     "file": "TrophyDay28ArmaniCunningham.jpg",
+     "title": "Trophy - Day 28"
+    },
+    {
+     "file": "TuskDay29ArmaniCunningham.jpg",
+     "title": "Tusk - Day 29"
+    },
+    {
+     "file": "CookieDay30ArmaniCunningham.jpg",
+     "title": "Cookie - Day 30"
     }
    ],
    "sections": []

@@ -156,8 +156,8 @@ function route() {
 
 async function init() {
   $("#nav-links").innerHTML = navHTML();
-  try { FILES = await (await fetch("media-list.json?v=2")).json(); } catch (e) { FILES = []; }
-  try { window.SITE.captions = Object.assign({}, await (await fetch("captions.json?v=2")).json(), window.SITE.captions || {}); } catch (e) { window.SITE.captions = window.SITE.captions || {}; }
+  try { FILES = await (await fetch("media-list.json?v=3")).json(); } catch (e) { FILES = []; }
+  try { window.SITE.captions = Object.assign({}, await (await fetch("captions.json?v=3")).json(), window.SITE.captions || {}); } catch (e) { window.SITE.captions = window.SITE.captions || {}; }
   // lightbox wiring
   $(".lb-close").onclick = closeLB;
   $(".lb-prev").onclick = () => { lb.i--; showLB(); };
