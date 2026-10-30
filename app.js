@@ -1,8 +1,9 @@
 // app.js — renders the data-driven, page-organized portfolio (faithful to Wix, ARSENIC layout).
+const MEDIA_V = 3;                    // bump when you re-render or replace an image
 let FILES = [];                       // all media filenames (from media-list.json)
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => (s || "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-const mediaURL = (f) => "media/" + encodeURIComponent(f);
+const mediaURL = (f) => "media/" + encodeURIComponent(f) + "?m=" + MEDIA_V;   // MEDIA_V busts the CDN cache when art is re-rendered
 
 // expand special tokens / arrays into a real file list (only files that exist)
 function imgs(spec) {
@@ -156,8 +157,8 @@ function route() {
 
 async function init() {
   $("#nav-links").innerHTML = navHTML();
-  try { FILES = await (await fetch("media-list.json?v=3")).json(); } catch (e) { FILES = []; }
-  try { window.SITE.captions = Object.assign({}, await (await fetch("captions.json?v=3")).json(), window.SITE.captions || {}); } catch (e) { window.SITE.captions = window.SITE.captions || {}; }
+  try { FILES = await (await fetch("media-list.json?v=4")).json(); } catch (e) { FILES = []; }
+  try { window.SITE.captions = Object.assign({}, await (await fetch("captions.json?v=4")).json(), window.SITE.captions || {}); } catch (e) { window.SITE.captions = window.SITE.captions || {}; }
   // lightbox wiring
   $(".lb-close").onclick = closeLB;
   $(".lb-prev").onclick = () => { lb.i--; showLB(); };
