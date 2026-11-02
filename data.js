@@ -394,6 +394,14 @@ window.SITE = {
      "title": "Lady - Day 14"
     },
     {
+     "file": "HoorayDay15ArmaniCunningham.jpg",
+     "title": "Hooray - Day 15"
+    },
+    {
+     "file": "GanglyDay16ArmaniCunningham.jpg",
+     "title": "Gangly - Day 16"
+    },
+    {
      "file": "Day19ArmaniCunningham.jpg",
      "title": "Confusion - Day 19"
     },
@@ -408,6 +416,10 @@ window.SITE = {
     {
      "file": "BeaconDay22ArmaniCunningham.jpg",
      "title": "Beacon - Day 22"
+    },
+    {
+     "file": "DapperDay23ArmaniCunningham.jpg",
+     "title": "Dapper - Day 23"
     },
     {
      "file": "ZipDay26ArmaniCunningham.jpg",
