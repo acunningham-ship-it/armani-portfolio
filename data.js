@@ -367,11 +367,19 @@ window.SITE = {
     },
     {
      "file": "RingDay2ArmaniCunningham.jpg",
-     "title": "Ring - Day 2"
+     "title": "Relic - Day 2"
+    },
+    {
+     "file": "MiniatureDay3Claude.jpg",
+     "title": "Miniature - Day 3 (claude did)"
+    },
+    {
+     "file": "CactusDay4Claude.jpg",
+     "title": "Cactus - Day 4 (claude did)"
     },
     {
      "file": "HandDay5ArmaniCunningham.jpg",
-     "title": "Hand - Day 5"
+     "title": "Smack - Day 5"
     },
     {
      "file": "OgreDay6ArmaniCunningham.jpg",
@@ -383,11 +391,27 @@ window.SITE = {
     },
     {
      "file": "TrashCanDay8ArmaniCunningham.jpg",
-     "title": "Trash Can - Day 8"
+     "title": "Stinky - Day 8"
     },
     {
      "file": "RamDay9ArmaniCunningham.jpg",
      "title": "RAM - Day 9"
+    },
+    {
+     "file": "MysticalDay10Claude.jpg",
+     "title": "Mystical - Day 10 (claude did)"
+    },
+    {
+     "file": "RescueDay11Claude.jpg",
+     "title": "Rescue - Day 11 (claude did)"
+    },
+    {
+     "file": "TossDay12Claude.jpg",
+     "title": "Toss - Day 12 (claude did)"
+    },
+    {
+     "file": "FlimsyDay13Claude.jpg",
+     "title": "Flimsy - Day 13 (claude did)"
     },
     {
      "file": "LadyDay14ArmaniCunningham.jpg",
@@ -395,15 +419,23 @@ window.SITE = {
     },
     {
      "file": "HoorayDay15ArmaniCunningham.jpg",
-     "title": "Hooray - Day 15"
+     "title": "Hooray - Day 15 (claude did)"
     },
     {
      "file": "GanglyDay16ArmaniCunningham.jpg",
-     "title": "Gangly - Day 16"
+     "title": "Gangly - Day 16 (claude did)"
+    },
+    {
+     "file": "ContraptionDay17Claude.jpg",
+     "title": "Contraption - Day 17 (claude did)"
+    },
+    {
+     "file": "FlightlessDay18Claude.jpg",
+     "title": "Flightless - Day 18 (claude did)"
     },
     {
      "file": "Day19ArmaniCunningham.jpg",
-     "title": "Confusion - Day 19"
+     "title": "Confused - Day 19"
     },
     {
      "file": "LoungeDay20ArmaniCunningham.jpg",
@@ -419,7 +451,15 @@ window.SITE = {
     },
     {
      "file": "DapperDay23ArmaniCunningham.jpg",
-     "title": "Dapper - Day 23"
+     "title": "Dapper - Day 23 (claude did)"
+    },
+    {
+     "file": "BakeDay24Claude.jpg",
+     "title": "Bake - Day 24 (claude did)"
+    },
+    {
+     "file": "FractureDay25Claude.jpg",
+     "title": "Fracture - Day 25 (claude did)"
     },
     {
      "file": "ZipDay26ArmaniCunningham.jpg",
@@ -440,6 +480,10 @@ window.SITE = {
     {
      "file": "CookieDay30ArmaniCunningham.jpg",
      "title": "Cookie - Day 30"
+    },
+    {
+     "file": "FlexDay31Claude.jpg",
+     "title": "Flex - Day 31 (claude did)"
     }
    ],
    "sections": []
